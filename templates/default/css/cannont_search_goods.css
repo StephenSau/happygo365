@@ -1,0 +1,6 @@
+.without_goods{width: 1200px;  margin:0 auto; position: relative; top: 0 ; left: 0;  height: 404px;  background: #fff;}
+.without_goods img {padding-left: 210px; padding-top: 45px; padding-right: 20px;}
+.without_goods div { float: left; }
+.without_goods dl {padding-top: 135px;}
+.without_goods  div dl .without_goods_bold {font-weight: bold; padding-bottom: 20px; color: #000; font-size: 14px;} 
+.without_goods dl dd {    padding-bottom: 13px;  color: #666666; font-size: 12px;}

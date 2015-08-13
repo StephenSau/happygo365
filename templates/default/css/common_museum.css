@@ -1,0 +1,87 @@
+.taiwan_museum_container li:hover{z-index:1;-webkit-box-shadow: 0 0 13px #d4d4d4;-moz-box-shadow: 0 0 13px #d4d4d4;-o-box-shadow: 0 0 13px #d4d4d4;box-shadow: 0 0 13px #d4d4d4}
+.taiwan_museum_container {min-width:1200; background:#fff;position:relative; width:100%; overflow: hidden; clear: both;}
+.taiwan_museum_ben {height:412px; width:1200px;}
+.taiwan_museum_ben_di { width:100%; height:412px; position:absolute; left:50%;margin-left: -960px;}
+.taiwan_museum_navbar {  width:1000px; margin:0 auto;height: 92px; padding-top: 20px; padding-bottom: 40px;}
+.taiwan_museum_navbar ul li {width: 250px; height: 92px;  float: left;}
+.taiwan_museum_navbar ul .taiwan_museum_navbar_1 {background: url("../images/taiwan_museum_bg.jpg"); background-position: 0px 0px;}
+.taiwan_museum_navbar ul .taiwan_museum_navbar_2 {background: url("../images/taiwan_museum_bg.jpg"); background-position: -250px 0px;}
+.taiwan_museum_navbar ul .taiwan_museum_navbar_3 {background: url("../images/taiwan_museum_bg.jpg"); background-position: -500px 0px;}
+.taiwan_museum_navbar ul .taiwan_museum_navbar_4 {background: url("../images/taiwan_museum_bg.jpg"); background-position: -750px 0px;}
+.taiwan_museum_main {margin: 0 auto;width:1005px;}
+.taiwan_museum_explosion { }
+.taiwan_museum_submenu {height: 44px; background: #fff; padding: 0 ; margin: 0; border-bottom: 1px solid #c2c2c2; clear: both;}
+.taiwan_museum_r { float: right;height: 43px; border-bottom: 2px solid #f00;  }
+.taiwan_museum_r a {line-height: 38px; vertical-align: top; color: #f00;}
+
+.anchor_point {position:absolute; top: -90px;}
+
+.taiwan_museum_l { float: left; height: 43px; position: relative; }
+.taiwan_museum_l a.taiwan_museum_submenu_exp {  vertical-align:top; line-height: 30px;}
+.taiwan_museum_l a.taiwan_museum_submenu_exp_en {  vertical-align:top; line-height: 38px;}
+.taiwan_museum_submenu_exp { color: #000; font-size: 22px; font-weight: bold;  padding-right: 22px;}
+.aiwan_museum_submenu_exp_en { font-size: 11px; }
+.taiwan_explosion_product { height: 436px; padding-top: 13px; overflow: hidden; padding-bottom: 42px; }
+.taiwan_explosion_product ul li {width: 333px; float: left; border-left: 1px solid #c2c2c2;height: 436px; margin-left: -1px;position: relative;  }
+.taiwan_explosion_product ul li .taiwan_exp_p{ text-align: center;}
+.taiwan_exp_num { position: absolute;  top: 0px; left: 23px; font-size: 28px; color: #CC0000; font-weight: bold;}
+.taiwan_exp_div { padding-top: 65px; padding-left: 22px; padding-right: 22px;}
+.taiwan_exp_div .taiwan_exp_tit { font-weight: bold; color: #000; line-height: 22px;}
+.taiwan_exp_div .taiwan_exp_detailed { color: #000; line-height: 22px;}
+.taiwan_exp_money { height: 50px; position: relative; width: 262px; padding-top: 11px;}
+.taiwan_exp_money p { color: #CC0000; font-size: 14px;}
+.taiwan_exp_money p a {font-size: 20px; font-weight: bold;}
+.taiwan_exp_money del {display:block;padding-top:8px;font-size: 14px; text-decoration: line-through; color: #999999; line-height: 25px;}
+.taiwan_museum_car {background: url("../images/taiwan_museum_bg.jpg"); background-position: 1px 49px; display: block; width: 42px ; height: 42px; position: absolute; bottom: 4px; left: 220px;}
+.taiwan_new_product { overflow: hidden; padding-top: 13px; padding-bottom: 20px;}
+.taiwan_new_product ul li { float: left;width: 200px; height: 290px; border-left: 1px solid #c2c2c2; margin-left: -1px; position: relative; }
+.taiwan_new_product .taiwan_new_num {   font-weight: bold; color: #CC0000;padding-left: 12px;}
+.taiwan_new_p {text-align: center;}
+.taiwan_new_div { padding:18px 12px 0 12px;}
+.taiwan_new_tit {font-size: 14px; color: #000; font-weight: bold; padding-bottom: 5px;}
+.taiwan_new_detailed {padding-top:8px;font-size: 14px ; color: #000; font-weight: normal;}
+.taiwan_new_money {position: relative; padding-top:11px;width: 177px;}
+
+.taiwan_new_money p {font-size: 14px;color: #CC0000;}
+.taiwan_new_money p a {font-size: 22px; font-weight: bold;}
+.taiwan_info{height: 41px;}
+.taiwan_new_money del {display:block;padding-top:8px;font-size: 14px; text-decoration: line-through; color: #999999; line-height: 23px;}
+.taiwan_new_money .taiwan_new_car {background: url("../images/taiwan_museum_bg.jpg"); background-position: -41px 48px; display: block; width: 31px ; height: 31px; position: absolute; bottom: 4px; left: 146px;}
+.taiwan_common_pro { overflow: hidden; padding-top: 13px; padding-bottom: 13px;}
+.taiwan_common_pro ul li { width: 249px; height: 347px;   float: left; border-left: 1px solid #c2c2c2; margin-left: -1px; position: relative;}
+.taiwan_common_pro ul li .taiwan_common_p  {text-align: center;  height: 185px ; overflow: hidden;}
+.taiwan_common_p img { margin-top: 1px; vertical-align: middle; }
+.taiwan_common_num { font-size: 16px; font-weight: bold; color: #CC0000; top: 10px; left: 10px; padding-left: 12px;}
+.taiwan_common_div{padding-left: 12px; width: 212px; padding-top: 20px;}
+.taiwan_common_tit {font-size: 14px; color: #000; font-weight: bold; padding-bottom: 5px;}
+.taiwan_common_detailed {font-size: 14px ; color: #000; font-weight: normal;}
+.taiwan_common_money {padding-top:11px;position: relative; width: 224px;}
+.taiwan_common_money p {font-size: 14px;color: #CC0000;}
+.taiwan_common_money p a {font-size: 22px; font-weight: bold;}
+.taiwan_common_money del {display:block;padding-top:8px;font-size: 14px; text-decoration: line-through; color: #999999; line-height: 23px;}
+.taiwan_common_money .taiwan_common_car {background: url("../images/taiwan_museum_bg.jpg"); background-position: 1px 49px; display: block; width: 42px ; height: 42px; position: absolute; bottom: 4px; left: 182px;}
+
+/*浮动菜单*/
+.guild_subMenu {font-size: 14px;font-weight: bold;text-align: center; color: #fff;width: 97px; position: fixed;right: 0; z-index: 100; bottom:0;}
+.guild_subMenu div {height: 33px; border:1px solid #fff;}
+.guild_subMenu a { display: block;}
+.guild_subMenu a:hover,.guild_subMenu a:active,.guild_subMenu a:link,.guild_subMenu a:visited { color: #fff;}
+.guild_subMenu_a{ background: #a1cf8d;  line-height: 33px;}
+.guild_subMenu_b{ background: #ff8aa8;  line-height: 33px;}
+.guild_subMenu_c{ background: url("../images/taiwan_museum_bg.jpg"); background-position:  -114px 36px;  line-height: 33px;}
+/*迪拜-快捷-颜色*/
+.guild_subMenu_d{ background: #00ccff;  line-height: 33px;}
+.guild_subMenu_e{ background: url("../images/taiwan_museum_bg.jpg"); background-position:  -214px 36px;  line-height: 33px;}
+/*日本-快捷-颜色*/
+.guild_subMenu_f{ background: #993399;  line-height: 33px;}
+.guild_subMenu_g{ background: url("../images/taiwan_museum_bg.jpg"); background-position:  -310px 36px;  line-height: 33px;}
+/*韩国-快捷-颜色*/
+.guild_subMenu_h{ background: #ff6699;  line-height: 33px;}
+.guild_subMenu_i{ background: url("../images/taiwan_museum_bg.jpg"); background-position:  -408px 36px;  line-height: 33px;}
+
+
+
+
+.taiwan_ad_1 { background: #feb5c8; height: 160px; margin-bottom: 20px;}
+.taiwan_ad_2 { background: #fac546; height: 160px; margin-bottom: 20px;}
+.

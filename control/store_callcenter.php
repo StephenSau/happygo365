@@ -1,0 +1,73 @@
+<?php
+
+defined('haipinlegou') or exit('Access Invalid!');
+
+class store_callcenterControl extends BaseMemberStoreControl {
+	public function __construct() {
+		parent::__construct();
+		Language::read('member_store_index');
+	}
+	public function indexOp(){
+		$store_info = Model('store')->field('store_presales,store_aftersales,store_workingtime')->find($_SESSION['store_id']);
+		if(!empty($store_info['store_presales'])){
+			$store_info['store_presales']	= unserialize($store_info['store_presales']);
+		}
+		if(!empty($store_info['store_aftersales'])){
+			$store_info['store_aftersales']	= unserialize($store_info['store_aftersales']);
+		}
+		Tpl::output('storeinfo', $store_info);
+		
+		Tpl::output('menu_sign','store_setting');
+		Tpl::output('menu_sign_url','index.php?act=store&op=store_setting');
+		Tpl::output('menu_sign1','store_callcenter');
+		$this->profile_menu('store_callcenter');
+		Tpl::showpage('store_callcenter');
+	}
+	
+	public function saveOp(){
+		if(chksubmit()){
+			$update = array();
+			$i=0;
+			if(is_array($_POST['pre']) && !empty($_POST['pre'])){
+				foreach($_POST['pre'] as $val){
+					if(empty($val['name']) || empty($val['type']) || empty($val['num'])) continue;
+					$update['store_presales'][$i]['name']	= $val['name'];
+					$update['store_presales'][$i]['type']	= intval($val['type']);
+					$update['store_presales'][$i]['num']	= $val['num'];
+					$i++;
+				}
+				$update['store_presales'] = serialize($update['store_presales']);
+			}
+			
+			$i=0;
+			if(is_array($_POST['after']) && !empty($_POST['after'])){
+				foreach($_POST['after'] as $val){
+					if(empty($val['name']) || empty($val['type']) || empty($val['num'])) continue;
+					$update['store_aftersales'][$i]['name']	= $val['name'];
+					$update['store_aftersales'][$i]['type']	= intval($val['type']);
+					$update['store_aftersales'][$i]['num']	= $val['num'];
+					$i++;
+				}
+				$update['store_aftersales'] = serialize($update['store_aftersales']);
+			}
+			
+			$update['store_workingtime'] = $_POST['working_time'];
+			$update['store_id']	= $_SESSION['store_id'];
+			Model()->table('store')->update($update);
+			showDialog(Language::get('nc_common_save_succ'), 'index.php?act=store_callcenter', 'succ');
+		}
+	}
+
+	private function profile_menu($menu_key) {
+		$menu_array	= array(
+			1=>array('menu_key'=>'store_setting','menu_name'=>Language::get('nc_member_path_store_config'),'menu_url'=>'index.php?act=store&op=store_setting'),
+			2=>array('menu_key'=>'store_callcenter','menu_name'=>Language::get('nc_member_path_store_callcenter'),'menu_url'=>'index.php?act=store_callcenter'),
+			3=>array('menu_key'=>'store_certified','menu_name'=>Language::get('nc_member_path_store_cert'),'menu_url'=>'index.php?act=store&op=store_certified'),
+			4=>array('menu_key'=>'store_map','menu_name'=>Language::get('nc_member_path_store_map'),'menu_url'=>'index.php?act=map'),
+			5=>array('menu_key'=>'store_slide','menu_name'=>Language::get('nc_member_path_store_slide'),'menu_url'=>'index.php?act=store&op=store_slide'),
+			6=>array('menu_key'=>'store_printsetup','menu_name'=>Language::get('nc_member_path_store_printsetup'),'menu_url'=>'index.php?act=store&op=store_printsetup')
+		);
+		Tpl::output('member_menu',$menu_array);
+		Tpl::output('menu_key',$menu_key);
+	}
+}

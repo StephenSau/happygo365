@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* CSS Document */
+/*base by KongDeho*/
+/*base by KongDeho*/
+.clear {clear: both;}
+.mt-0 {margin-top: 0px!important;}
+.ml-0 {margin-left: 0px!important;}
+.mr-0 {margin-right: 0px!important;}
+.mt-20 {margin-top: 20px;}
+.pl-20 {padding-left: 20px;}
+.fs-14 {font-size: 14px;}
+.owt {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.bg-red {background-color: #ff3131;}
+.bg-orange {background-color: #ff6500;}
+.bg-blue {background-color: #0570c2;}
+.bg-gray {background-color: #e5e5e5;}
+.c-blue {color: #0570c2;}
+.c-orange {color: #ff6500;}
+.c-red {color: #ff3030;}
+.c-green {color: #079a15;}
+.c-gray {color: #888888;}
+.ta-l {text-align: left!important;}
+.triangle_border {width:0; height:0; border-width:0 6px 6px; border-style:solid; border-color:transparent transparent #333;/*透明 透明  灰*/ position:relative;}
+
+/*other*/
+.tips-dialog, .f-mask {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#99000000, endColorstr=#99000000); position: fixed; left: 0px; top: 0px; display: none; z-index: 5;}
+.tips-content {width: 800px; height: auto; padding-bottom: 30px; background-color: #fbfbfb; position: relative; margin:-240px auto; top: 40%; z-index: 6;}
+/*.tips-content {width: 800px; height: auto; padding-bottom: 30px; background-color: #fbfbfb; position: relative; margin: -230px auto; top: 40%; z-index: 6;}*/
+.tips-dialog .close-x {width: 25px; height: 25px; line-height: 25px; text-align: center; background-color: #0570c2; color: #fff; position: absolute; right: 0px; top: 0px; font-size: 20px; cursor: pointer;}
+.tips-dialog h1 {text-align: center; color: #0570c2; font-size: 24px; font-weight: bold; padding-top: 50px;}
+.tips-dialog ul {width: 600px; height: auto; margin: 40px auto 0px;}
+.tips-dialog ul li {margin-bottom: 30px;}
+.tips-dialog ul label {width: 90px; color: #666666; float: left; text-align: right;}
+.tips-dialog ul span {width: 120px; color: #666666; text-align: right;}
+.tips-dialog ul span i {color: #F00; float: left;}
+.tips-dialog ul p {margin-left: 120px; color: #aaaaaa; font-size: 12px; margin-top: 5px;}
+.tips-dialog ul em {font-size: 12px; color: #f00;}
+.tips-dialog textarea {width: 510px; height: 150px; resize: none;}
+.tips-dialog .submit {width: 280px; height: 40px; line-height: 40px; background-color: #0570c2; color: #fff; text-align: center; border: none; font-size: 20px; font-weight: bold;}
+.tz-fare-icon {height: 27px; line-height: 27px; background-image: url("../../images/haipin2/tz-fare-icon.png"); background-repeat: no-repeat;}
+.add-edit-icon {height: 27px; line-height: 27px; background-image: url("../../images/haipin2/add-edit-icon.png"); background-repeat: no-repeat;}
+.add-edit-icon-2 {height: 27px; line-height: 27px; background: url("../../images/haipin2/add-edit-icon_2.png") 0 2px / auto no-repeat;}
+.add-folder-icon {height: 27px; line-height: 27px; background: url("../../images/haipin2/folder-icon.png") 0 5px / auto no-repeat;}
+.crown-icon {height: 27px; line-height: 27px; background-image: url("../../images/haipin2/crown-icon.png"); background-repeat: no-repeat;}
+.id-icon {height: 18px; line-height: 18px; background-image: url("../../images/haipin2/id-icon.png"); background-repeat: no-repeat;}
+.tips-dialog .tz-fare-icon, .tips-dialog .add-edit-icon, .tips-dialog .crown-icon, .tips-dialog .add-edit-icon-2, .tips-dialog .add-folder-icon {height: 70px; position: relative; left: 100px; top: 50px;  padding-left: 30px; font-size: 20px; color: #0570c2;}
+.tips-dialog .text, .tips-dialog select {width: 280px; height: 36px; border: 1px solid #dedede; padding-left: 10px;}
+.tips-dialog.address-dialog {position: absolute; left: 0px; top: 0px; background: rgba(0, 0, 0, 0); z-index: 6;}
+.tips-dialog.address-dialog .tips-content {width: 800px; height: 700px; left: 50%; margin-left: -400px; top: 0px; margin-top: 0px; z-index: 6;}
+.tips-dialog.address-dialog span {line-height: 36px; float: left;}
+.tips-dialog.address-dialog form {padding-top: 0px;}
+.tips-dialog.address-dialog ul li {margin-bottom: 20px;}
+.tips-dialog.address-dialog select {width: 150px;}
+.tips-dialog.address-dialog .add-edit-icon {left: 68px;}
+.tips-dialog form {width: 600px; height: auto; margin: 0px auto; padding-top: 60px; font-size: 14px;}
+.tips-dialog table th {vertical-align: top; padding-top: 10px; color: #666666; width: 100px; text-align: right;}
+.tips-dialog table td {padding-bottom: 20px;}
+.tips-dialog table p {line-height: 36px;}
+.tips-dialog table p.tips {color: #888888;}
+.tips-dialog table p span {margin-right: 50px;}
+.tips-dialog table div.tips {color: #0570c2;}
+.tips-dialog table em {font-size: 12px; color: #aaaaaa; margin-top: 10px; display: block;}
+.tips-dialog table div input {width: 40px;}
+.tips-dialog table .details {padding: 10px 20px; background-color: #f7fbfd; border: 1px solid #cadff0; margin-top: 20px;}
+.tips-dialog table .details .ed-t {height: 36px; line-height: 36px; background-color: #f9f9f9; border: 1px solid #dedede; clear: both; margin: 15px 0px;}
+.tips-dialog table .details .ed-t span {height: 36px; border-left: 1px solid #dedede; margin-left: -1px; float: left; text-align: center;}
+.mb-10 {margin-bottom: 10px;}
+.tips-dialog.wltool {display: block;}
+
+/*公共代码*/
+.table {width: 100%; background-color: #fff; border: 1px solid #dedede; font-size: 14px;}
+.table thead {height: 38px; line-height: 38px; background-color: #f9f9f9; color: #888888; border: 1px solid #dedede; font-size: 12px;}
+.table td {border-top: 1px solid #dedede;text-align: center;  vertical-align: middle;}
+.table td a {color: #333333;}
+.table td .t-div {text-align: left;}
+.table td .t-div a:hover {color: #0570c2;}
+.table td .t-div img {width: 80px; height: 80px; float: left; margin-right: 10px;}
+.table td .t-div .checkbox {float: left; margin-top: 35px; margin-right: 10px;}
+.table td .t-p i {margin: 0px 7px;}
+.table td .t-input {display: none; width: 80px; height: 35px; margin: 0px auto; border: 1px solid #dedede; text-align: center; font-size: 16px;}
+.table-pagination {background-color: #fff; padding: 50px 0px; margin-top: -1px!important; border: 1px solid #dedede;}
+.table tr:hover td {background-color: #fbfbfb;}
+.table tr:hover .t-span {display: none;}
+.table tr:hover .t-input {display: block;}
+.delete-btn, .btn-gray {width: 65px; height: 20px; line-height: 20px; text-align: center; color: #888888; margin: 8px auto 0px; display: block; cursor: pointer ;background-color: #e5e5e5;}
+.delete-btn:hover, .btn-gray:hover {background-color: #ff6501; color: #fff!important;}
+dl a.btn, table a.btn {width: 95px; height: 20px; line-height: 20px; text-align: center; color: #fff!important; margin: 8px auto 0px; display: block; cursor: pointer;}
+.delete-icon {height: 16px; background: url("../../images/haipin2/icon14.png") 0 0 / auto 100% no-repeat; padding-left: 20px;}
+.delete-icon:hover {background: url("../../images/haipin2/icon14_2.png") 0 0 / auto 100% no-repeat; color: #0570c2;}
+.xj-icon {height: 16px; background: url("../../images/haipin2/xj-icon.png") 0 0 / auto 100% no-repeat; padding-left: 20px;}
+.sj-icon {height: 16px; background: url("../../images/haipin2/sj-icon.png") 0 0 / auto 100% no-repeat; padding-left: 20px;}
+.trade-remind {width: auto; height: 50px; line-height: 50px; text-align: center; border: 1px solid #dedede; background-color: #f8f8f8; position: relative;}
+.trade-remind ul li {width: 123px; float: left; position: relative;}
+.trade-remind ul li.first {width: 127px;}
+.trade-remind.fahuo ul li, .trade-remind.fahuoset ul li {width: 175px;}
+.trade-remind.fahuoset ul li.first {width: 125px;}
+.trade-remind ul li a {color: #555555; display: block;}
+.trade-remind ul li a em {color: #0570c2; margin-left: 5px;}
+.trade-remind ul li a .interval {position: absolute; right: -4px; color: #e5e5e5;}
+.trade-remind ul li.active a {background-color: #0570c2; color: #fff;}
+.trade-remind ul li.active a em {color: #fff;}
+.trade-remind .trade-right-btn {width: 70px; height: 26px; line-height: 26px; text-align: center; font-size: 12px; color: #fff; background-color: #ff6500; border-radius: 3px; position: absolute; right: 20px; top: 11px; cursor: pointer;}
+.search-bar {padding: 15px 10px; background-color: #fff; border: 1px solid #dedede; margin-top: -1px; position: relative;}
+.search-bar label {margin-left: 40px; font-size: 14px; color: #555555;}
+.sb-right-btn {width: 70px; height: 26px; line-height: 26px; text-align: center; font-size: 12px; color: #fff; background-color: #ff6500; border-radius: 3px; position: absolute; right: 20px; top: 17px; cursor: pointer;}
+.dl dt {width: auto; height: 38px; line-height: 38px; background-color: #f9f9f9; border: 1px solid #dedede; font-size: 12px; color: #888888; margin-bottom: 10px;}
+.dl dd {border: 1px solid #dedede;}
+
+/******************seller center******************/
+/*面包导航*/
+.crumbs {font-size: 12px; color: #888888; padding: 35px 0px 20px;}
+.crumbs a {color: #888888;}
+.crumbs .current {color: #ff6600;}
+.crumbs01 {font-size: 12px; color: #888888; padding: 25px 0px 20px;}
+.crumbs01 a {color: #888888;}
+/*卖家中心左导航seller center left nav*/
+.left-seller-nav {width: 200px; height: 1690px; *height: 2020px; border: 1px solid #dedede; background-color: #fff; float: left;}
+.left-seller-nav .title {width: auto; height: 50px; line-height: 50px; text-align: center; background-color: #0570c2; color: #fff; font-size: 20px;}
+.sn-menu-tree {width: auto; height: auto; padding: 20px;}
+.sn-menu-tree .sn-menu-sub {margin-bottom: 25px;}
+.sn-indicator {width: 14px; height: 14px; background-image: url("../../images/haipin2/sn-indicator-icon.png"); background-repeat: no-repeat; display: inline-block; margin-right: 5px;}
+.sn-menu-tree .fold .sn-indicator {background-position: 0px 0px;}
+.sn-menu-tree .unfold .sn-indicator {background-position: 0px -14px;}
+.sn-menu-tree .sn-menu-sub-title {font-size: 16px; color: #0570c2;}
+.sn-menu-tree .sn-menu-sub-content {margin-top: 10px;}
+.sn-menu-tree .fold .sn-menu-sub-content {display: none;}
+.sn-menu-tree .unfold .sn-menu-sub-content {display: block;}
+.sn-menu-tree .sn-menu-item a:link, .sn-menu-tree .sn-menu-item a:visited {color: #333333; display: block; font-size: 12px; height: 25px;  line-height: 25px; overflow: hidden; padding-left: 28px; text-decoration: none;}
+.sn-menu-tree .sn-menu-item a:hover, .sn-menu-tree .sn-menu-item a.active {background-color: #82b7e0; color: #fff;}
+
+/*卖家中心内容seller center right content*/
+
+.goods_record_search .search-text {width: 900px; height: 50px; font-size: 14px; border: none; padding: 0px 10px 0px 20px;}
+.goods_record_search .submit {width: 50px; height: 50px; border: none; font-size: 20px; cursor: pointer;padding:20px;margin-left:5px;background-color:white;font-size:12px;}
+.right-seller-content {width: 990px; height: auto;  float: right;}
+.seller-info {width: auto; height: 110px; padding: 20px; background-color: #fff; border: 1px solid #dedede;}
+.seller-info .seller-photo {width: 110px; height: 110px; float: left;}
+.seller-info-content {margin-left: 15px;}
+.seller-info-content .title h1 {font-size: 24px; display: inline; font-family: "微软雅黑";}
+.seller-info-content .title .authentication {position: relative; top: 5px; left: 20px; margin-left: 10px;}
+.authentication {width: 27px; height: 22px; background-image: url("../../images/haipin2/seller-info-icon.png"); display: inline-block;}
+.authentication.atc-p {background-position: 0px 0px;}
+.authentication.atc-h {background-position: 0px -22px;}
+.seller-info-content dl dd {font-size: 12px; color: #888888; margin-top: 16px;}
+.seller-info-content a {color: #888888;}
+.seller-info-content .seller-credit {color: #0570c2;}
+.seller-info-content .shop-name {color: #0570c2;}
+.seller-info-content .pay-type:hover {color: #ff6600;}
+.seller-shop-grade {width: 230px; height: 110px; float: right;}
+.seller-shop-grade dd {margin-top: 18px; font-size: 12px; color: #888888;}
+.grade-start em {width: 95px; height: 14px; background: url("../../images/haipin2/startrankpng.png") #dfdfdf no-repeat; display: inline-block; overflow: hidden; margin: -2px 5px 0px 8px; vertical-align: middle;}
+.grade-start em i {height: 14px; background: url("../../images/haipin2/startrankpng.png") #ff6c00 no-repeat; display: inline-block;}
+.grade-start span {color: #ff6c00; margin-right: 3px;}
+.seller-content {margin-top: 20px;}
+.seller-tips {width: 719px; height: auto; border: 1px solid #dedede; background-color: #fff; font-family: "微软雅黑"; margin-top: -1px;}
+.seller-tips .title {width: auto; height: 48px; line-height: 48px; background-color: #fafafa; padding: 0px 20px; border-bottom: 1px solid #dedede;}
+.seller-tips h1, .seller-tips h2, .seller-tips h3, .seller-tips h4, .seller-tips h5, .seller-tips h6 {float: left;}
+.seller-tips .title ul li {float: left; font-size: 12px; color: #888888; margin-left: 20px;}
+.seller-tips .seller-tips-content {padding: 20px;}
+.seller-tips .st-warning {width: auto; height: auto; border: 1px solid #cde2f3; background-color: #f7fbfd; padding: 15px;}
+.seller-tips .st-warning dt {font-size: 14px;}
+.seller-tips .st-warning dd {font-size: 12px; display: inline-block; margin-top: 15px; margin-right: 30px; color: #888888;}
+.seller-tips .st-warning a {color: #0570c2;}
+.seller-tips .st-warning a em {color: #ff6600;}
+.seller-tips .st-other-msg {padding: 15px;}
+.seller-tips .st-other-msg  li {width: 155px; font-size: 12px; display: inline-block; margin-bottom: 15px; color: #555555;}
+.seller-tips .st-other-msg  li a {color: #555555;}
+.account-balance {height: 244px;}
+.purse-icon {width: 86px; height: 99px; background-image: url("../../images/haipin2/purse-icon.png"); background-repeat: no-repeat;}
+.account-balance .purse-icon{width: auto; height: 120px; padding: 35px 30px 0px 180px; background-position: 50px 40px;}
+.account-balance .balance-tips i {font-size: 18px; color: #0570c2;}
+.account-balance .tips {font-size: 12px; color: #888888; margin-top: 15px;}
+.account-balance .account-operate a {font-size: 12px; color: #333333; margin-top: 25px; margin-right: 20px;}
+.account-balance .account-operate a:hover {color: #0570c2;}
+.recharge-btn {height: 34px; line-height: 34px; border: 1px solid #dfdfdf; color: #333333; background: url("../../images/haipin2/recharge-btn-bg.png") repeat-x; text-align: center; cursor: pointer;}
+.account-balance .account-operate a.recharge-btn {width: 120px; display: inline-block; font-size: 16px; margin-right: 30px;}
+.operation-promotion-list li {width: 158px; height: 188px; display: inline-block; padding-top: 25px; border: 1px solid #f2f2f2; cursor: pointer; margin-left: 13px; margin-bottom: 20px; float: left;}
+.op-icon {width: 69px; height: 61px; background-image: url("../../images/haipin2/operation-promotion-icon.png"); background-repeat: no-repeat;}
+.op-icon.opi-tb {background-position: 0px 0px;}
+.op-icon.opi-td {background-position: 0px -64px;}
+.op-icon.opi-ff {background-position: 0px -130px;}
+.op-icon.opi-cs {background-position: 0px -195px;}
+.op-icon.opi-car {background-position: 0px -257px;}
+.op-icon.opi-cc {background-position: 0px -320px;}
+.op-icon.opi-as {background-position: 0px -383px;}
+.op-icon.opi-ta {background-position: 0px -445px;}
+.op-icon.opi-coupon {background-position: 0px -505px;}
+.operation-promotion-list li:hover {border-color: #0570c2;}
+.operation-promotion-list li .op-icon {margin: 0px auto;}
+.operation-promotion-list li:hover .op-icon {background-image: url("../../images/haipin2/operation-promotion-on-icon.png");}
+.operation-promotion-list li:hover .op-title {color: #0570c2;}
+.operation-promotion-list li .op-title {text-align: center; margin-top: 20px;}
+.operation-promotion-list li .op-details {line-height: 20px; font-size: 12px; color: #888888; margin-top: 20px; padding: 0px 10px;}
+.seller-nc {width: 228px; height: 1498px; *height: 1828px; padding: 0px 20px 20px; float: left; margin-left: -1px; border: 1px solid #dedede; background-color: #fff;}
+.seller-nc .mall-bulletin .title, .seller-nc .contact-way .title {padding: 20px 0px 15px; border-bottom: 1px solid #dedede; color: #0570c2;}
+.seller-nc .mall-bulletin .mb-content {height: auto; line-height: 22px; margin-top: 10px; font-size: 14px; color: #555555;}
+.seller-nc .mall-bulletin, .seller-nc .contact-way {margin-bottom: 30px;}
+.seller-nc .contact-way li {margin-top: 15px; font-size: 14px; color: #555555;}
+.seller-nc .contact-way li span {color: #0570c2;}
+.seller-nc-aimg {width: 228px; height: auto;}
+
+/*交易管理*/
+.search-bar .order, .search-bar .maijia {width: 192px; height: 30px; border: 1px solid #dedede;}
+.search-bar .order-time {width: 100px; height: 30px; border: 1px solid #dedede;}
+.search-bar .search-btn {width: 70px; height: 30px; background-color: #0570c2; color: #fff; border: none; font-size: 16px; cursor: pointer;}
+.sell-list, .address-list {margin-top: 20px;}
+.sell-dl-content dt {width: auto; height: 38px; line-height: 38px; background-color: #f9f9f9; border: 1px solid #dedede; font-size: 12px; color: #888888; margin-bottom: 10px;}
+.sell-dl-content dt span {display: inline-block; text-align: center; float: left;}
+.sell-dl-content dt .order-details {width: 362px;} 
+.sell-dl-content dt .price, .sell-dl-content dd .order-content .price {width: 100px; text-align: center;} 
+.sell-dl-content dt .quantity, .sell-dl-content dd .order-content .quantity {width: 80px; text-align: center;} 
+.sell-dl-content dt .shouhou, .sell-dl-content dd .order-content .shouhou {width: 130px;} 
+.sell-dl-content dt .all-price, .sell-dl-content dd .order-content .all-price {width: 176px; text-align: center;} 
+.sell-dl-content dt .order-operate, .sell-dl-content dd .order-content .order-operate {width: 140px; text-align: center;}
+.sell-dl-content dt .buyer-info {width: 446px; text-align: center;}
+.sell-dl-content dd {width: auto; height: auto; border: 1px solid #dedede; font-size: 12px; background-color: #fff; margin-bottom: 20px;}
+.sell-dl-content dd:hover {border-color: #0570c2;}
+.sell-dl-content dd .order-header {height: 40px; line-height: 40px; background-color: #f5f5f5; color: #888888; padding: 0px 20px;}
+.sell-dl-content dd .order-header span {margin-right: 50px;}
+.sell-dl-content dd .order-header a {color: #555555;}
+.sell-dl-content dd .order-header a:hover {color: #0570c2;}
+.qq-icon {height: 17px; background: url("../../images/haipin2/icon13_2.png") no-repeat;}
+.qq-icon.active {height: 17px; background: url("../../images/haipin2/icon13_1.png") no-repeat;}
+.sell-dl-content dd .order-header .qq-icon {padding-left: 22px; display: inline-block; line-height: 17px; color: #555555;}
+.sell-dl-content dd .order-header .link-man {margin-right: 0px; padding-right: 18px;}
+.sell-dl-content dd .order-header .link-man:hover .buyer-link-info {display: block;}
+.buyer-link-info {width: 240px; height: auto; background-color: #f7fbfd; border: 1px solid #90bfe4; box-shadow: 1px 1px 3px #c6dbeb, -1px -1px 1px #c6dbeb, 1px -1px 3px #c6dbeb, -1px 1px 3px #c6dbeb; border-radius: 5px; font-size: 14px; padding: 20px; position: absolute; right: -280px; top: -18px; display: none;}
+.buyer-link-info .id-icon {padding-left: 38px; font-size: 18px; color: #0570c2; margin-bottom: 10px;}
+.buyer-link-info table tr {line-height: 30px;}
+.buyer-link-info table th {width: 100px; text-align: right; color: #666666;}
+.triangle_border_left {width: 9px; height: 14px; background: url("../../images/haipin2/triangle_border_left.png") no-repeat; position: absolute; left: -8px; top: 18px;}
+.sell-dl-content dd .order-content {line-height: 18px; color: #333333;}
+.sell-dl-content dd .order-content .order-details {float: left; width: 542px;}
+.sell-dl-content dd .order-content .order-details ul li {padding: 20px 0px 20px 20px; border-top: 1px solid #dedede; border-right: 1px solid #dedede; clear: both;}
+.sell-dl-content dd .order-content .order-details ul li.first {border-top: none;}
+.sell-dl-content dd .order-content .order-details img {width: 80px; height: 80px; float: left; margin-right: 10px;}
+.sell-dl-content dd .order-content .order-details .otm {width: 200px; float: left; margin-right: 51px;}
+.sell-dl-content dd .order-content .order-details a, .sell-dl-content dd .order-content .shouhou a {color: #333333;}
+.sell-dl-content dd .order-content .order-details a:hover {color: #0570c2;}
+.sell-dl-content dd .order-content .shouhou a:hover {color: #ff3131;}
+.sell-dl-content dd .order-content .order-details span {color: #bbbbbb; margin-top: 10px; display: block;}
+.sell-dl-content dd .order-content .price, .sell-dl-content dd .order-content .quantity {float: left; font-size: 14px;}
+.sell-dl-content dd .order-content .shouhou, .sell-dl-content dd .order-content .all-price {border-right: 1px solid #dedede; margin-right: -1px;}
+.sell-dl-content dd .order-content .shouhou, .sell-dl-content dd .order-content .all-price, .sell-dl-content dd .order-content .order-operate {float: left; padding-top: 20px;}
+.sell-dl-content dd .order-content .shouhou p {width: 80px; margin: 0px auto;}
+.sell-dl-content dd .order-content .shouhou p i  {margin: 0px 7px;}
+.sell-dl-content dd .order-content .shouhou div {text-align: center;}
+.sell-dl-content dd .order-content .all-price em {font-size: 18px; color: #ff6500;}
+.sell-dl-content dd .order-content .all-price .tips {margin-top: 12px;}
+.sell-dl-content dd .order-content .all-price .tips span {display: block; color: #bbbbbb;}
+.sell-dl-content dd .order-content .order-operate a, .sell-dl-content dd .order-content .order-operate p {display: block; color: #333333; margin-bottom: 3px;}
+.sell-dl-content dd .order-content .order-operate p.send-out:hover {color: #ff6500;}
+.sell-dl-content dd .order-content .order-operate p.t-success:hover {color: #089a15;}
+.sell-dl-content dd .order-content .order-operate p.t-cancel:hover {color: #bbbbbb;}
+.sell-dl-content dd .order-content .order-operate a:hover {color: #0570c2;}
+.sell-dl-content dd .order-content .buyer-info {width: 406px; line-height: 18px; padding: 20px 20px 0px 20px; float: left; font-size: 14px; border-left: 1px solid #dedede; margin-left: -1px;}
+.sell-dl-content dd .order-content .buyer-info div {margin-bottom: 15px; position: relative;}
+.sell-dl-content dd .order-content .buyer-info label {width: 75px; color: #555555; text-align: right; display: inline-block; float: left;}
+.sell-dl-content dd .order-content .buyer-info span {width: 330px; display: inline-block;}
+.sell-dl-content dd .order-content .buyer-info div a.btn {margin-top: 0px; position: absolute; right: 0px; top: -2px;}
+.sell-dl-content dd .order-content div.btn {width: 65px; height: 20px; line-height: 20px; text-align: center; color: #666666; margin: 8px auto 0px;}
+.cog-success {color: #0570c2;}
+.cog-ing {color: #079a15;}
+.cog-failure {color: #ff3131;}
+.pagination {text-align: center; padding-top: 50px; clear: both;}
+.pagination a {/*padding: 5px 10px;*/ background-color: #fff; /*border: 1px solid #dedede;*/ border-radius: 3px; color: #555555;}
+.pagination a.active {background-color: #0570c2; color: #fff; border-color: #0570c2;}
+.order-num {width: auto; height: 50px; line-height: 50px; background-color: #0570c2; color: #fff; padding: 0px 20px; font-size: 18px;}
+.rsc-title {width: auto; height: 48px; line-height: 48px; background-color: #fafafa; padding: 0px 20px; border-bottom: 1px solid #dedede;}
+.logistics-dynamic, .order-details-msg {width: auto; height: auto; border: 1px solid #dedede; background-color: #fff; margin-top: 20px;}
+.logistics-dynamic-content {padding: 30px 20px; font-size: 14px;}
+.logistics-dynamic-content .tips span {color: #ff6500; margin-right: 40px;}
+.logistics-dynamic-content ul {margin: 50px 0px 0px 70px;}
+.logistics-dynamic-content ul li {margin-bottom: 30px; color: #333333;}
+.logistics-dynamic-content ul li.last-msg, .logistics-dynamic-content .tips-more a {color: #0570c2;}
+.logistics-dynamic-content .tips-more {width: auto; height: 38px; line-height: 38px; border: 1px solid #dedede; background-color: #f7fbfd; padding: 0px 20px;margin-top:20px; clear: both;}
+.logistics-dynamic-content .tips-more span {color: #333333; margin-right: 40px;}
+.order-details-msg-content {padding: 20px; font-size: 14px;}
+.order-details-msg-content ul li {float: left; margin: 0px 40px 20px 0px; font-size: 12px;}
+.order-details-msg-content ul li img {width: 80px; height: 80px; display: block;}
+.order-details-msg-content ul li span {width: 80px; display: block; margin: 10px 0px;}
+.order-details-msg-content .tips-more {width: auto; height: 76px; border: 1px solid #dedede; background-color: #f7fbfd; padding: 0px 20px; clear: both;}
+.order-details-msg-content .tips-more span {display: block; color: #0570c2; margin-top: 15px;}
+.order-details-msg-content .tips-more span em {color: #333333;}
+.logistics-table td {padding: 30px 0px;}
+.logistics-table td .delete-btn {color: #888888!important;}
+.logistics-table td .delete-btn:hover {color: #fff!important;}
+.logistics-table td .edit-address-btn:hover {color: #0570c2; cursor: pointer;}
+.logistics-company {width: auto; height: 1500px; margin-top: 20px; background-color: #fff; border: 1px solid #dedede;}
+.logistics-company-list {width: 100%; margin-top: 50px; border-bottom: 1px solid #dedede; color: #333333; font-size: 14px;}
+.logistics-company-list td {width: 20%; margin-bottom: 30px; margin-left: 5%; float: left;}
+.logistics-company-list td input {margin-right: 10px;}
+.logistics-company .save-btn {width: 280px; height: 40px; line-height: 40px; margin: 35px auto 0px; text-align: center; border: none; background-color: #0570c2; color: #fff; display: block; font-size: 18px; font-weight: bold;}
+.pay-way-table td {padding: 30px; color: #333333;}
+.pay-way-table tr:hover td .set-btn {color: #0570c2; cursor: pointer;}
+.express-msg {margin-top: 20px;}
+.express-thead {height: 38px; line-height: 38px; border: 1px solid #dedede; background-color: #f9f9f9; font-size: 12px; margin-bottom: 10px;}
+.express-thead span {display: block; float: left; text-align: center; color: #888888;}
+.express-list li {width: auto; height: auto; background-color: #fff; border: 1px solid #dedede; margin-bottom: 20px;}
+.express-list li .express-name {height: 40px; line-height: 40px; background-color: #f5f5f5; padding: 0px 20px;}
+.express-list li .express-name .fr {font-size: 12px;}
+.express-list li .express-name .fr span {color: #888888; margin-right: 30px;}
+.express-list li .express-name .fr i {margin: 0px 8px;}
+.express-list li .express-name .fr a {color: #555555;}
+.express-list li table {width: 100%; font-size: 14px; text-align: center; margin-bottom: -1px;}
+.express-list li table td {height: 70px; border-bottom: 1px solid #dedede; vertical-align: middle;}
+.evaluation-tips {border: 1px solid #dedede;}
+.evaluation-content {background-color: #fff; padding: 80px 50px 0px;}
+.evaluation-msg {font-size: 14px; height: 60px; padding-bottom: 50px;}
+.evaluation-msg-name p {margin-bottom: 15px;}
+.evaluation-msg-name p span {color: #ff6c00; font-size: 18px; margin: 0px 7px 0px 30px;} 
+.progress-bar {width: 502px; height: auto; position: relative; font-size: 12px;}
+.progress-bar em {height: 14px; background: url("../../images/haipin2/progress-bar.png") no-repeat; display: block;}
+.progress-bar em i {height: 14px; background: url("../../images/haipin2/progress-bar.png") left bottom no-repeat; display: block;}
+.progress-bar p span {display: block; float: left; color: #aaaaaa; margin-top: 8px;}
+.tip-small-bubble {width: 30px; height: 24px; line-height: 24px; text-align: center; background: url("../../images/haipin2/icon4.png") no-repeat; position: absolute; top: -25px; margin-left: -15px;}
+.evaluation-tips .progress-bar {margin-left: 268px; padding-top: 5px;}
+.right-seller-content .buyershopsevaluate, .right-seller-content .buyerdoneintop, .right-seller-content .buyerrefund {background-color: #fff;}
+.right-seller-content .buyerdoneintop .a-buyerdongtitle {background-color: #0570c2; border: #0570c2; border-right: none; color: #fff;}
+.right-seller-content .ul-buyerdongtitle .a-buyerdongtitle {background-color: #0570c2; border: #0570c2; border-right: none; color: #fff;}
+.right-seller-content .ul-buyerdongtitle .a-buyerdongtitle  a {color: #fff;}
+.right-seller-content .buyerdoneintop .a-buyerdongtitle  a {color: #fff;}
+.right-seller-content .buyerdoneintop .a-buyerdongtitle.active {background-color: #0570c2; border-color: #0570c2; color: #fff;}
+.credit-tips {border-top: 1px solid #dedede;}
+.credit-content {background-color: #fff;}
+.credit-table {width: 100%; font-size: 14px; text-align: center; background-color: #fff;}
+.credit-table th {height: 27px; padding: 20px 0px;}
+.credit-table th p {width: 75px; height: 27px; line-height: 27px; margin: 0px auto; background-position: left 0px;}
+.credit-table td {height: 40px; vertical-align: middle; border-top: 1px dashed #dedede;}
+.credit-table .p-evaluatenice em {color: #ff3131;}
+.credit-table .p-evaluateok em {color: #ff6d0b;}
+.credit-table .p-evaluateunok em {color: #999999;}
+
+
+
+/*商品发布*/
+.head-search {width: auto; height: 120px; background-color: #0570c2;}
+.hs-content {width: 900px; height: 50px; line-height: 50px; margin: 0px auto; padding-top: 35px;}
+.head-search p {float: left; color: #fff; font-size: 20px;}
+.head-search-form {position: relative; margin-left: 100px;}
+/*.head-search-form .search-text {width: 680px; height: 50px; font-size: 14px; border: none; padding: 0px 10px 0px 20px;}*/
+.head-search-form .search-text {width: 680px; height: 35px; font-size: 14px; border: none; padding: 0px 10px 0px 20px;}
+.head-search-form .submit {width: 100px; height: 50px; border: none; font-size: 20px; cursor: pointer;}
+.head-search-form .aaa {width:80px;}
+.search-result-list {margin-top: 20px; background-color: #fff;}
+.search-result-table {width: 100%;}
+.search-result-table td {padding: 20px;}
+.search-result-table td.ta-l img {width: 80px; height: 80px; float: left; margin-right: 10px;}
+.search-result-table td.ta-l p {width: 350px; line-height: 20px; margin-top: 20px;}
+.search-result-table tr input {display: none;}
+.search-result-table tr a {color:　}
+.search-result-table tr:hover, .search-result-table tr:hover a {color: #0570c2;}
+.search-result-table tr:hover input {display: block; width: 80px; height: 35px; margin: 0px auto; border: 1px solid #dedede; text-align: center; font-size: 16px;}
+.search-result-table tr:hover .s-value {display: none;}
+.search-result-list .pagination {margin-top: -1px; border: 1px solid #dedede; padding: 50px 0px;}
+.goods-classify {width: auto; height: 626px; border: 1px solid #dedede; background-color: #fff; margin-top: 20px; padding: 20px;}
+.classify-item {width: 267px; height: 460px; border: 1px solid #dedede; float: left; margin-right: 30px; margin-bottom: 20px;}
+.search-icon {width: 21px; height: 21px; background-image: url("../../images/haipin2/search-icon.png"); background-repeat: no-repeat;}
+.classify-item input {width: 269px; height: 40px; border: 1px solid #9bc6e7; margin: -1px 0px 0px -1px; background-position: 10px 10px; padding-left: 40px;}
+.goods-list {max-height: 381px; padding: 20px; overflow-y: auto;}
+.goods-list dd {margin-bottom: 30px;}
+.goods-list dd .title {color: #0570c2; font-size: 16px; margin-bottom: 15px; position: relative; cursor: pointer;}
+.goods-list b.triangle_border {position: absolute; right: 0px; top: 4px;}
+.goods-list dd ul li {line-height: 25px; font-size: 14px; color: #555555; cursor: pointer;}
+.goods-list dd ul li:hover {color: #0570c2; text-decoration: underline;}
+.goods-list dd.unfold ul {display: block;}
+.goods-list dd.fold ul {display: none;}
+.goods-list dd.unfold b.triangle_border {border-color: transparent transparent #0570c2; }
+.goods-list dd.fold b.triangle_border {border-width: 6px 6px 0px; border-color: #0570c2 transparent transparent;}
+.selected-goods {height: 40px; line-height: 40px; padding-left: 20px; background-color: #f7fbfd; border: 1px solid #cde2f3; clear: both; color: #333333; font-size: 14px;}
+.selected-goods p {float: left; color: #0570c2; font-weight: bold;}
+.next-btn {width: 280px; height: 40px; line-height: 40px; text-align: center; margin: 40px auto; color: #fff; background-color: #0570c2; display: block;}
+.goods-release-nav {width: auto; height: 130px; border: 2px solid #0570c2; background-color: #fff; overflow: hidden;}
+.grn-step {width: 1500px; height: 48px; margin-top: 40px;}
+.grn-step li {width: 321px; float: left; margin-left: 100px;}
+.grn-icon {height: 48px; background-image: url("../../images/haipin2/grn.png"); background-repeat: no-repeat; padding-left: 60px;}
+.grn-icon.active {height: 48px; background-image: url("../../images/haipin2/grn-active.png"); background-repeat: no-repeat;}
+.grn-icon.step-one {background-position: 0px 1px;}
+.grn-icon.step-two {background-position: 0px -54px;}
+.grn-icon.step-three {background-position: 0px -109px;}
+.grn-icon span {color: #999999; font-size: 14px;}
+.grn-icon p {font-size: 18px; line-height: 38px; color: #999999;}
+.grn-icon.active p {color: #0570c2;}
+.goods-release-nav i {width: 18px; height: 33px; background-image: url("../../images/haipin2/grn-arrow.png"); background-repeat: no-repeat; float: right; margin-top: 7px;}
+.goods-release-nav i.active {background-position: 0px -33px;}
+.goods-release-success {height: 420px; background-color: #fff; border: 1px solid #dedede; margin-top: 20px;}
+.grs-content {width: 336px; height: 220px; margin: 100px auto 0px; text-align: center;}
+.nice-big-icon {width: 101px; height: 101px; background-image: url("../../images/haipin2/release-success.png"); background-repeat: no-repeat;}
+.grs-content .nice-big-icon {width: 100%; height: 70px; padding-top: 125px; background-position: center top; color: #555555; font-size: 18px;}
+.grs-content a {color: #aaaaaa; font-size: 12px;}
+.grs-content a:hover {color: #0570c2;}
+.goods-base-info {height: auto; margin-top: 20px; background-color: #fff;}
+.gbi-title {height: 50px; line-height: 50px; padding: 0px 20px; background-color: #fafafa; border: 1px solid #dedede; margin-top: -1px;}
+.goods-base-info table {width: 100%; margin-top: -1px;}
+.goods-base-info table td {padding: 20px 30px; vertical-align: top; line-height: 36px; border-right: 1px solid #dedede;}
+.goods-base-info table td textarea {width: 100%; height: 150px; resize: none;}
+.goods-base-info table td .text {width: 300px; height: 40px; border: 1px solid #dedede; padding-left: 10px;}
+.goods-base-info table td .text100 {width: 100%; height: 40px; border: 1px solid #dedede; padding-left: 10px;}
+p.tips, span.tips {font-size: 12px; line-height: 22px; margin-top: 5px; color: #aaaaaa;}
+.goods-base-info table tr:hover td {background-color: #fff;}
+.select-brand {width: 300px; height: 40px; padding-left: 10px;}
+.goods-base-info table .recharge-btn {width: 100px;}
+.goods-base-info table .recharge-btn.h38 {height: 40px; background-size: 100% 100%; margin-right: 20px;}
+.goods-base-info table .select {width: 170px; height: 40px; padding-left: 10px; margin-right: 10px;}
+.goods-base-info table .select-pic {height: 40px; padding: 0px 20px; background-color: #e5e5e5; color: #555555; float: left; display: block; cursor: pointer; margin: 0px;}
+.goods-base-info table .select-pic.active {background-color: #0570c2; color: #fff;}
+.goods-base-info table em.tips {font-size: 14px; font-weight: bold; color: #0570c2;}
+.radio {margin-right: 10px;} 
+.text-date {width: 100px; height: 30px; border: 1px solid #dedede; margin-left: 10px;}
+.text-hour, .text-minute {width: 40px; height: 30px; border: 1px solid #dedede; margin-left: 5px; margin-right: 5px;}
+/*.goods-base-info table span {margin-right: 50px;}*/
+.ul-upload-pic {width: auto; height: 140px; border: 1px solid #dedede; clear: both; margin-top: 20px; padding: 20px;}
+.ul-upload-pic li {width: 100px; height: auto; float: left; margin-right: 20px;}
+.ul-upload-pic li img {width: 100px; height: 100px; margin-bottom: 10px;}
+.ul-upload-pic li .recharge-btn:hover {background-image: none; background-color: #0570c2; color: #fff;}
+.goods-base-info table .freight-d-set {padding: 10px 20px 20px; margin-top: 10px; border: 1px solid #cde2f3; background-color: #f7fbfd;}
+.goods-base-info table .freight-d-set .text {width: 150px; height: 30px; margin-right: 10px;}
+.goods-base-info .btn-box {border: 1px solid #dedede; margin-top: -1px;}
+.sell-search-bar select, .sell-search-bar .text {width: 200px; height: 30px; padding-left: 10px; border: 1px solid #dedede; margin-right: 10px;}
+.sell-table .t-div, .brand-table .t-div {height: 80px; padding: 20px;}
+.sell-table .t-div a {display: block;}
+.sell-table .t-p a:hover, .brand-table .t-p a:hover, .goods-classify-table a:hover {color: #0570c2; cursor: pointer;}
+.overall-operate {height: 40px; line-height: 40px; background-color: #f9f9f9; border: 1px solid #dedede; margin-top: -1px; padding: 0px 20px; vertical-align: middle; font-size: 12px;}
+.overall-operate span {margin-right: 30px; cursor: pointer; color: #888888;}
+.default-goods .goods-release-success {height: 1476px; margin-top: -1px;}
+.brand-save-success .goods-release-success {border-color: #fff; background-color: #fbfbfb;}
+.brand-save-success table, .edit-classify table {margin: 50px 0px 0px 130px; font-size: 14px; color: #666666;}
+.edit-classify table label {width: 100px; display: block; text-align: right;}
+.brand-save-success table .recharge-btn {width: 100px; height: 36px; line-height: 32px; font-size: 16px;}
+.brand-save-success table .tips {width: 388px; line-height: 20px;}
+.goods-classify-table .recharge-btn {width: 100px; height: 40px; line-height: 40px; background-size: 100% 100%; float: left; margin: 18px 0px 0px 20px;}
+.goods-classify-table .t-div {height: 80px; line-height: 80px; padding: 20px;} 
+
+
+/*客服管理*/
+.information-reply .info-reply {width: 80%; display: block; float: left; text-align: center;}
+.information-reply .operate {width: 20%; display: block; float: left; text-align: center;}
+.information-reply dd {border: 1px solid #dedede; clear: both; position: relative; margin-bottom: 20px;}
+.information-reply dd:hover {border-color: #0570c2;}
+.info-reply-header {height: 40px; line-height: 40px; background-color: #f5f5f5; font-size: 12px; padding: 0px 20px;}
+.info-reply-content {background-color: #fff; padding: 20px; font-size: 14px;}
+.info-reply-details {width: 70%; padding: 10px 30px; position: relative; margin-top: 20px;}
+.info-reply-details i {background-position: left top; background-repeat: no-repeat; display: block; height: 16px; position: absolute; width: 24px;}
+.info-reply-details p {line-height: 22px;}
+.info-reply-operate {width: 156px; position: absolute; top: 80px; right: 20px; text-align: center;}
+.info-reply-operate p a {color: #888888;}
+.info-reply-operate p a:hover {color: #0570c2;}
+.complain-table td, .refund-table td {padding: 30px 20px;}
+.complain-table td a:hover {color: #ff6500;}
+.refund-table td a:hover {color: #0570c2;}
+.report-dl-content dt span {display: block; float: left; text-align: center; padding: 0px 20px;}
+.report-dl-content .goods-name {width: 255px;}
+.report-dl-content .report-type {width: 100px;}
+.report-dl-content .report-theme {width: 153px;}
+.report-dl-content .pic {width: 70px;}
+.report-dl-content .state {width: 70px;}
+.report-dl-content .result {width: 100px;}
+.report-dl-content dd {font-size: 14px; background-color: #fff; color: #333333; margin-bottom: 20px; padding-bottom: 20px;}
+.report-dl-content dd:hover {border-color: #0570c2;}
+.report-dl-content dd .goods-name {text-align: left;}
+.report-dl-content dd a {color: #333333;}
+.report-dl-content dd a:hover {color: #0570c2;}
+.report-dd-header {height: 40px; line-height: 40px; background-color: #f9f9f9; color: #888888; padding: 0px 20px;}
+.report-dd-info li {height: 80px; float: left; text-align: center; padding: 20px; line-height: 18px; border-bottom: 1px dashed #dedede;}
+.report-dd-info li img {width: 80px; height: 80px; float: left; margin-right: 10px;}
+.report-dd-content {clear: both; padding: 15px 20px 0px; line-height: 18px;}
+.report-dd-content p {float: left; color: #0570c2;}
+.report-dd-content span {overflow: hidden; display: block;}
+.ad-table td {padding: 30px 20px;}
+.ad-table .t-p a:hover {color: #0570c2;}
+.ad-table .recharge-btn {width: 90px; height: 30px; line-height: 30px; display: block;}
+.ad-table .recharge-btn:hover {background-image: none; background-color: #0570c2; color: #fff;} 
+.buy-ad-info {height: 1639px; border: 1px solid #dedede; margin-top: -1px; background-color: #fff; font-size: 14px;}
+.buy-ad-table {margin: 50px; color: #555555;}
+.buy-ad-table th {width: 150px; text-align: right; margin-bottom: 30px; padding: 0px 0px;}
+.buy-ad-table td {padding: 0px 10px 40px;}
+.buy-ad-table td span {color: #888888;}
+.buy-ad-table td .text {width: 335px; height: 38px; border: 1px solid #dedede; padding-left: 10px;}
+.buy-ad-table td .text.month {width: 100px; margin-right: 10px;}
+.buy-ad-table .recharge-btn {height: 30px; line-height: 30px; background-size: 100% 100%;}
+.buy-ad-table td .text-select-pic {width: 228px; height: 30px; padding-left: 10px;}
+.buy-ad-table td .submit {width: 190px; height: 40px; line-height: 40px; text-align: center; background-color: #0570c2; color: #fff; border: none; cursor: pointer;}
+.add-search-operate {height: 30px; padding: 20px; border: 1px solid #dedede; margin-top: -1px; background-color: #fff;}
+.add-search-operate .recharge-btn {width: 110px; height: 30px; line-height: 30px; float: left;}
+.add-search-operate .select {width: 200px; height: 30px; border: 1px solid #dedede; padding-left: 10px; margin-left: 5px;}
+.photo-list {height: 1538px; border: 1px solid #dedede; padding: 40px; margin-top: 20px; background-color: #fff;}
+.ul-photo-list {width: 1000px;}
+.ul-photo-list li {width: 185px; height: auto; padding: 6px; border: 1px solid #dedede; float: left; margin-bottom: 25px; margin-right: 37px;}
+.ul-photo-list li:hover {border-color: #0570c2;}
+.ul-photo-list li img {width: 185px; height: 185px;}
+.ul-photo-list li .info {position: relative; margin-top: 10px;}
+.ul-photo-list li .edit-icon {width: 19px; height: 16px; background: url("../../images/haipin2/icon-ae.png") no-repeat; position: absolute; right: 0px; top: 0px; cursor: pointer; display: none;}
+.ul-photo-list li:hover .edit-icon {display: block;}
+.photo-list .pagination {padding-top: 20px;}
+.ul-photo-list li .photo-box {width: 185px; height: 185px; position: relative;}
+.ul-photo-list li .photo-box .mask {width: 165px; height: 30px; line-height: 30px; padding: 0px 10px; background: rgba(5, 112, 194, 0.6); position: absolute; left: 0px; bottom: 0px; font-size: 14px; color: #fff; display: none;}
+.ul-photo-list li:hover .photo-box .mask {display: block;}
+.watermark-operate {height: 1639px; border: 1px solid #dedede; background-color: #fff; margin-top: -1px;}
+.watermark-m-table {margin: 50px 0px 0px 80px; font-size: 14px;}
+.watermark-m-table th {width: 100px; line-height: 36px; text-align: right; padding-right: 5px; font-size: 14px; color: #555555;}
+.watermark-m-table td {padding-bottom: 30px; padding-right: 10px; vertical-align: middle;}
+.watermark-m-table td .file-btn {width: 100px; height: 36px; position: relative; display: block; float: left; margin-right: 10px;}
+.watermark-m-table td .file {width: 100%; height: 100%; position: absolute; opacity: 0; z-index: 1; cursor: pointer;}
+.watermark-m-table td .recharge-btn {width: 100%; height: 100%; background-size: 100% 100%; position: absolute; left: 0px; top: 0px; z-index: 0;}
+.watermark-m-table td .text {width: 330px; height: 38px; border: 1px solid #dedede; padding-left: 10px;}
+.watermark-m-table td .text-100 {width: 100px; height: 38px; border: 1px solid #dedede; margin-right: 10px; padding-left: 10px;}
+.watermark-m-table td select {width: 100px; height: 38px; border: 1px solid #dedede; padding-left: 10px;}
+.watermark-m-table td textarea {width: 330px; height: 150px; border: 1px solid #dedede; resize: none; padding: 10px; font-size: 14px; line-height: 18px;}
+.watermark-m-table .submit {width: 200px; height: 40px; line-height: 40px; background-color: #0570c2; color: #fff; text-align: center; border: none; font-size: 20px; font-weight: bold;}
+.watermark-bg {width: 216px; height: 158px; background: url("../../images/haipin2/watermark-bg.png") no-repeat;}
+.w-p-content {padding: 40px 0px 0px 15px;}
+.w-p-content span {width: 54px; height: 26px; line-height: 26px; text-align: center; border: 1px dashed #a1c9ea; background-color: #f5f9fd; display: block; float: left; margin: 0px 8px 7px 0px; color: #a2cae9; cursor: pointer;}
+.w-p-content span.active {border-color: #fdbe3b; background-color: #fffae8; color: #663300;}
+
+/*发货*/
+.wrap1 {
+    background-color: #fff;
+    border: 1px solid #c4d5e0;
+    clear: both;
+    margin: 0;
+    padding: 12px;
+    width: 830px;
+}
+.ncu-table-style {
+    border-collapse: collapse;
+    clear: both;
+    line-height: 20px;
+    width: 100%;
+	background-color:#fff;
+	/*margin-top:20px;*/
+}
+.w250 {
+    width: 250px !important;
+}
+a.ncu-btn1 {
+    background: url("../../images/haipin2/member/ncus_repeat_x.png") repeat-x scroll center -73px rgba(0, 0, 0, 0);
+    border: 1px solid #8d8d8d;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #555;
+    display: inline-block;
+    height: 20px;
+    line-height: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+/*运费模板选择*/
+.transport{
+     background-color: #697;
+    color: white;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 70px;
+}

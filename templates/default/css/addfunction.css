@@ -1,0 +1,34 @@
+*{ padding: 0; list-style-type: none; margin: 0;}
+
+
+.custom_container {width: 1210px; border:1px solid #8EC1FF ; float: left; margin-bottom: 30px;padding-top: 20px;}
+.custom_display {display: none;}
+.custom_container dl { border: 1px solid #d3e5f3; float: left; margin-bottom: 20px;}
+.custom_container dt {padding-top:10px;float: left; width: 110px; line-height: 20px; text-align: right; }
+.custom_container dt  input { text-align: right; font-size: 14px; line-height: 20px; font-weight: bold; }
+.custom_container dd {padding-top:10px;float: right;  border-left: 1px solid #d3e5f3;width: 1050px; }
+.custom_container dd ul li {float: left; padding-left: 30px; padding-bottom: 10px; }
+.custom_container dd ul li input {width: 140px; line-height: 20px;border: none; background: #ECEDEE;}
+
+
+
+
+.custom_containers {width: 1210px; border:1px solid #8EC1FF ; float: left; margin-bottom: 30px;padding-top: 20px;}
+.custom_displays {display: none;}
+.custom_containers dl { border: 1px solid #d3e5f3; float: left; margin-bottom: 20px;}
+.custom_containers dt {padding-top:10px;float: left; width: 110px; line-height: 20px; text-align: right; }
+.custom_containers dt  input { text-align: right; font-size: 14px; line-height: 20px; font-weight: bold; }
+.custom_containers dd {padding-top:10px;float: right;  border-left: 1px solid #d3e5f3;width: 1050px; }
+.custom_containers dd ul li {float: left; padding-left: 30px; padding-bottom: 10px; }
+.custom_containers dd ul li input {width: 140px; line-height: 20px;border: none; background: #ECEDEE;}
+
+
+.qqqqqqqqqqqqqq {width: 1210px; border:1px solid #8EC1FF ; float: left; margin-bottom: 30px;padding-top: 20px;}
+.wwwwwwwwwwwwwwwwww {display: none;}
+.qqqqqqqqqqqqqq dl { border: 1px solid #d3e5f3; float: left; margin-bottom: 20px;}
+.qqqqqqqqqqqqqq dt {padding-top:10px;float: left; width: 110px; line-height: 20px; text-align: right; }
+.qqqqqqqqqqqqqq dt  input { text-align: right; font-size: 14px; line-height: 20px; font-weight: bold; }
+.qqqqqqqqqqqqqq dd {padding-top:10px;float: right;  border-left: 1px solid #d3e5f3;width: 1050px; }
+.qqqqqqqqqqqqqq dd ul li {float: left; padding-left: 30px; padding-bottom: 10px; }
+.qqqqqqqqqqqqqq dd ul li input {width: 140px; line-height: 20px;border: none; background: #ECEDEE;}
+
